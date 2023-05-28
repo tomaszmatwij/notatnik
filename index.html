@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <script src='https://kit.fontawesome.com/4ac80ba84e.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="menu">
+        <h1><i class="fas fa-sticky-note"></i> MyNotes</h1>
+        <div class="menu-buttons">
+            <button class="add icon"> <i class="fas fa-plus"></i> Dodaj</button>
+            <button class="delete-all icon"><i class="fas fa-trash-alt"></i> Usuń</button>
+        </div>
+    </div>
+
+
+    <div class="note-area">
+        <!-- <div class="note">
+            <div class="note-header">
+                <h3 class="note-title">Notatka #1</h3>
+                <button class="delete-note">
+                    <i class="fas fa-times icon"></i>
+                </button>
+            </div>
+            <div class="note-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita perferendis rem
+                explicabo aperiam repudiandae sapiente blanditiis illum nobis ad repellendus dolore, cum officia
+                assumenda
+                animi dignissimos adipisci eos officiis nulla!</div>
+        </div> -->
+    </div>
+    <div class="note-panel">
+        <h2>Dodaj notatkę</h2>
+        <label for="category">Wyierz kategorię</label>
+        <select id="category">
+            <option value="0" disabled selected>- wybierz kategorię -</option>
+            <option value="1">Zakupy</option>
+            <option value="2">Praca</option>
+            <option value="3">Inne</option>
+        </select>
+        <label for="text">Wpisz treść notatki</label>
+        <textarea id="text"></textarea>
+        <p class="error">Uzupełnij wszystkie pola!</p>
+        <div class="panel-buttons">
+            <button class="icon save"><i class="fas fa-save"></i> Zapisz</button>
+            <button class="icon cancel"><i class="fas fa-window-close"></i> Anuluj</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

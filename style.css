@@ -1,0 +1,106 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	height: 100vh;
+	background-color: rgb(246, 246, 246);
+	font-family: 'Montserrat', sans-serif;
+}
+.menu {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 40px;
+	height: 120px;
+}
+.menu button,
+.note-panel .save,
+.note-panel .cancel {
+	padding: 12px 25px;
+	background: none;
+	border: 1px solid #999;
+	font-size: 14px;
+	cursor: pointer;
+	transition: background-color 0.3s, color 0.3s;
+}
+.menu button:hover,
+.note-panel .save:hover,
+.note-panel .cancel:hover {
+	background-color: #333;
+	color: #ddd;
+}
+.icon {
+	margin-right: 10px;
+}
+.add {
+	margin-right: 20px;
+}
+.note-area {
+	display: flex;
+	align-items: start;
+	flex-wrap: wrap;
+	padding: 20px;
+}
+
+.note {
+	margin: 40px 20px;
+	width: 240px;
+	background-color: rgb(255, 243, 3);
+	border: 1px solid black;
+}
+.note-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+	background-color: rgba(0, 0, 0, 0.2);
+}
+.note-header .delete-note {
+	background: none;
+	font-style: 20px;
+	border: none;
+	cursor: pointer;
+}
+.note-body {
+	padding: 20px 15px;
+}
+.note-panel {
+	display: none;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 40px 0;
+	width: 600px;
+	background-color: #fff;
+	box-shadow: 0 0 10px black;
+	border-radius: 5px;
+}
+.note-panel h2 {
+	margin-bottom: 20px;
+	text-transform: uppercase;
+}
+.note-panel label {
+	margin-bottom: 10px;
+}
+.note-panel #text,
+.note-panel #category {
+	margin-bottom: 20px;
+	padding: 10px 20px;
+	width: 100%;
+	max-width: 90%;
+	max-height: 600px;
+	font-size: 16px;
+	border: 1px solid #333;
+	border-radius: 3px;
+}
+.note-panel .error {
+	margin-bottom: 20px;
+	color: red;
+	visibility: hidden;
+}
